@@ -150,8 +150,8 @@ function build(callback) {
           if (perfOut) {
             console.timeEnd(require('crypto').createHash('md5').update(fn.toString()).digest('hex'));
             var stack = new Error().stack.split('\n').filter(line => !line.match('metalsmith-debug-ui'));
-            console.log('stack', stack);
-            var [_, _, name = null] = stack[1].match(/^(\s)*at.*\/(metalsmith-[^\/]*)/) || [];
+            // console.log('stack', stack)
+            var [_, _, name = null] = stack[1].match(/^(\s)*at.*\/(metalsmith-[^\/]*)/) || stack[2].match(/^(\s)*at.*\/(metalsmith-[^\/]*)/) || [];
             console.log(name);
           }
         });
