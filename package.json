@@ -52,6 +52,7 @@
     "debug": "^2.6.8",
     "lodash.set": "^4.3.2",
     "lodash.transform": "^4.6.0",
+    "metalsmith-webpack": "^1.0.3",
     "strip-ansi": "^3.0.1",
     "vow": "^0.4.14",
     "wrap-fn": "^0.1.5"
