@@ -159,7 +159,8 @@ function build(callback) {
         return defer.promise();
       }).then(() => report(fn.name)(files, metalsmith)).catch(err => {
         pluginError = true;
-        dbg('caught plugin error', err);
+        throw err;
+        // dbg('caught plugin error', err)
       });
     });
   });
