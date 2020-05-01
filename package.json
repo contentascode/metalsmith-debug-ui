@@ -28,7 +28,9 @@
     "test:watch": "cross-env NODE_ENV=test mocha --compilers js:babel-register --watch test",
     "version": "npm run build",
     "postversion": "git push && git push --tags",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "watch": {
     "babel": {
@@ -55,7 +57,8 @@
     "metalsmith-webpack-2": "github:leviwheatcroft/metalsmith-webpack",
     "strip-ansi": "^3.0.1",
     "vow": "^0.4.14",
-    "wrap-fn": "^0.1.5"
+    "wrap-fn": "^0.1.5",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -158,5 +161,6 @@
   },
   "directories": {
     "test": "test"
-  }
+  },
+  "snyk": true
 }
