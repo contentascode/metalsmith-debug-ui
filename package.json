@@ -49,7 +49,7 @@
     }
   },
   "dependencies": {
-    "debug": "^2.6.8",
+    "debug": "^2.6.9",
     "lodash.set": "^4.3.2",
     "lodash.transform": "^4.6.0",
     "metalsmith-webpack-2": "github:leviwheatcroft/metalsmith-webpack",
