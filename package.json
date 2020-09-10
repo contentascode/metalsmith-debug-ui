@@ -54,7 +54,7 @@
     "lodash.transform": "^4.6.0",
     "metalsmith-webpack-2": "github:leviwheatcroft/metalsmith-webpack",
     "strip-ansi": "^3.0.1",
-    "vow": "^0.4.14",
+    "vow": "^0.4.20",
     "wrap-fn": "^0.1.5"
   },
   "devDependencies": {
